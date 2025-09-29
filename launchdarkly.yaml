@@ -1,0 +1,12 @@
+apiVersion: backstage.io/v1alpha1  
+kind: Component  
+metadata:  
+  name: launchdarklytest  
+  annotations:  
+    launchdarkly.com/project-key: default  
+    launchdarkly.com/environment-key: test  
+    launchdarkly.com/context: "{ \"kind\": \"tenant\", \"key\": \"blah\", \"name\": \"blah\" }"  
+spec:  
+  type: service  
+  lifecycle: unknown  
+  owner: 'group:engineering'
